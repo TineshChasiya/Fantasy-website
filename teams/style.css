@@ -1,0 +1,1474 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.team-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 12rem;
+    width: 100%;
+    background: linear-gradient(rgba(255, 0, 0), rgba(255, 165, 0));
+    box-shadow: 0 0 10px rgb(255, 165, 0, 0.2);
+    z-index: 1;
+    /* padding: 1rem; */
+}
+
+.team-nav .left {
+    display: flex;
+    align-items: center;
+    padding: 0 1em;
+
+}
+
+.team-nav .left .back {
+    margin-right: 1.5rem;
+}
+
+.team-nav .left .back i {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.team-nav .left .teams .team span {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.team-nav .left .teams .hours .hour {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.team-nav .total-select-player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+
+}
+
+.team-nav .total-select-player .left-team {
+    margin-right: 1em;
+}
+
+.team-nav .total-select-player .right-team {
+    margin-left: 1em;
+}
+
+.team-nav .total-select-player span {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.team-nav .total-select-player .left-team .lt,
+.team-nav .total-select-player .right-team .rt {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+
+}
+
+.team-nav .total-select-player .right-team .rt {
+    margin-left: 1rem;
+}
+
+.team-nav .total-select-player .left-team .number,
+.team-nav .total-select-player .right-team .number {
+    font-size: 1.3rem;
+    font-weight: 700;
+    /* color: rgba(0,0,0,0.5); */
+    color: gray;
+}
+
+.team-nav .total-select-player .or {
+    font-size: 1rem;
+}
+
+.team-nav .player-select-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0 1em;
+
+}
+
+.team-nav .player-select-indicator .total-player {
+    color: rgba(0, 0, 0, 0.5);
+    margin-right: 0.5rem;
+}
+
+.team-nav .player-select-indicator .select-player {
+    width: 100%;
+    height: 0.5rem;
+    display: flex;
+    /* margin: 0 0.5rem; */
+}
+
+.team-nav .player-select-indicator .select-player div {
+    width: 100%;
+    background-color: grey;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+
+}
+
+.team-nav .player-select-indicator .all-close-player i {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.team-nav .stats-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+
+}
+
+.team-nav .stats-info .condition {
+    padding: 0 1em;
+    /* width: 100%; */
+}
+
+.team-nav .stats-info .condition {
+    width: 100%;
+    margin: 0 0.2rem;
+    /* position: relative; */
+    color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    /* align-items: center; */
+}
+
+
+.team-nav .stats-info .condition .title {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    /* width: 100%; */
+}
+
+.team-nav .stats-info .condition .avg {
+    display: flex;
+    gap: 0 0.3em;
+}
+
+.team-nav .stats-info .condition .value {
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 1em;
+}
+
+@media screen and (max-width:500px) {
+    .wrapper nav label {
+        font-size: 10px;
+    }
+
+    .player-info {
+        font-size: 0.8em;
+    }
+
+    .player-info img {
+        width: 15%;
+    }
+}
+
+
+@media screen and (min-width:320px) {
+    .players-points-sel-c-vc-by .points-sel-c-vc-_by {
+
+        overflow-x: scroll;
+        scrollbar-width: none;
+    }
+
+    .players-points-sel-c-vc-by .points-sel-c-vc-_by::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media screen and (max-width:463px) {
+    .cvc-player-container .left-player-info .left-player-img-team-pos img {
+        width: 25px;
+    }
+
+    /* .cvc-player-container .left-player-info .left-player-img-team-pos{
+      margin-right: 0em;
+    }
+      */
+    .cvc-player-container .left-player-info .left-player-name-pts {
+        font-size: 0.6em;
+    }
+
+    .cvc-player-container .right-choice-c-vc .right-cap .chc-c,
+    .cvc-player-container .right-choice-c-vc .right-vcap .chc-vc {
+        text-align: center;
+        /* box-shadow: 0 0 10px rgb(0, 0, 0, 0.08); */
+        /* border-radius: 50%; */
+        /* padding: 0.5em 0.5em; */
+        margin-bottom: 0.5em;
+        /* border: 1px solid rgb(0, 0, 0, 0.08); */
+        font-size: 0.7em;
+        font-weight: 700;
+        color: black;
+    }
+
+    .cvc-player-container .right-sel-c-vc .right-percentage .percentage {
+        font-size: 0.6em;
+    }
+
+    .cvc-team-pos{
+        font-size: 0.7em;
+    }
+
+    .left-player-name{
+        font-size: 1.5em;
+    }
+    .left-player-pts{
+        font-size: 1.1em;
+    }
+    .right-choice-c-vc{
+        font-size: 0.8em;
+    }
+}
+
+
+.cvc-player-container .left-player-info .left-player-img-team-pos img{
+    width: 2.5em;
+}
+
+@media only screen and (max-width:400) {
+
+
+
+}
+
+/* .container-player-information{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    
+} */
+
+
+.wrapper-team {
+    width: 100%;
+    /* min-height: 100vh; */
+    margin: 4.3rem auto;
+    top: 2em;
+    left: 0;
+    z-index: 0;
+}
+
+.wrapper-team .player-team-nav {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 11;
+    top: 12em;
+    display: flex;
+    align-items: center;
+    background: white;
+    box-shadow: none;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.08);
+}
+
+.wrapper-team .player-team-nav label {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    color: rgb(0, 0, 0, 0.7);
+    font-size: 0.8em;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+#wk:checked~nav label.wk,
+#bat:checked~nav label.bat,
+#ar:checked~nav label.ar,
+#bowl:checked~nav label.bowl {
+    color: red;
+}
+
+nav label i {
+    padding-right: 7px;
+}
+
+nav .slider-team {
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    border-radius: 5px;
+    /* background-color: blue; */
+    transition: all 0.3s ease;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#bat:checked~nav .slider-team {
+    left: 20%;
+}
+
+#ar:checked~nav .slider-team {
+    left: 40%;
+}
+
+#bowl:checked~nav .slider-team {
+    left: 60%;
+}
+
+section .content {
+    display: none;
+    background-color: #fff;
+}
+
+#wk:checked~section .content-1,
+#bat:checked~section .content-2,
+#ar:checked~section .content-3,
+#bowl:checked~section .content-4 {
+    display: block;
+}
+
+.wrapper-team .section .content .title {
+    margin-top: 14em;
+
+}
+
+
+@media screen and (max-width:400px) {
+    .selected-pts-cr table tr th {
+        font-size: 0.8em;
+    }
+
+    .selected-pts-cr {
+        font-size: 0.9em;
+
+    }
+}
+
+.selected-pts-cr {
+    /* display: flex; */
+    justify-content: space-between;
+    padding: 0 0.3em;
+    /* margin-left: 50%; */
+    /* transform: translateX(-50%); */
+}
+
+table {
+    width: 100%;
+}
+
+table .pts-head,
+.cr-head,
+.add-head,
+table .pts-value,
+.cr-value,
+.add-pl {
+    text-align: center;
+
+}
+
+table tr td {
+    margin-top: 1em;
+    border-bottom: 1px solid lightgray;
+}
+
+
+.selected-pts-cr .selected table tr th {
+    color: gray;
+    font-weight: 100;
+    border-bottom: 1px solid lightgray;
+}
+
+.selected-pts-cr .selected .img-details {
+    display: flex;
+    align-items: center;
+    gap: 0 1em;
+}
+
+.selected-pts-cr .selected .img-details .img .info {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.selected-pts-cr .selected .img-details .details .sel {
+    margin: 0.3em 0;
+}
+
+.selected-pts-cr .selected .img-details .details .pl-name {
+    font-weight: 600;
+}
+
+.selected-pts-cr .selected .img-details .details .team {
+    background-color: black;
+    color: white;
+}
+
+.selected-pts-cr .selected .img-details .details .plm {
+    color: blue;
+}
+
+.selected-pts-cr .selected table tr th {
+    padding: 0.5em 1em;
+}
+
+.add-pl {
+    color: green;
+    font-weight: 700;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:500px) {
+    .player-information {
+        font-size: 0.9em;
+    }
+
+    .player-information .add-btn .add-team {
+        border: none;
+        outline: none;
+        background-color: darkgreen;
+        color: white;
+        cursor: pointer;
+        font-size: 0.7em;
+
+    }
+
+
+    .player-information .tfs .tfs-title,
+    .player-information .my-teams .my-teams-title,
+    .player-information .cts .cts-title {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    .bottom {
+        font-size: 0.7em;
+    }
+
+    .preview-team {
+        font-size: 0.7em;
+    }
+}
+
+.player-information {
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    height: 100cap;
+    width: 100%;
+    background: #FFF;
+    box-shadow: 0 0 10px rgb(255, 165, 0, 0.2);
+    z-index: 20;
+    /* padding: 1rem; */
+    display: none;
+    transition: all 0.3s ease;
+
+}
+
+
+.player-information .top-nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* height: 15rem; */
+    width: 100%;
+    background: rgb(50, 12, 100);
+    box-shadow: 0 0 10px rgb(255, 165, 0, 0.2);
+    z-index: 1;
+    padding: 1rem;
+    color: #FFF;
+}
+
+.player-information .top-nav .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 100%; */
+}
+
+.player-information .top-nav .title span {
+    margin-left: 1rem;
+}
+
+.player-information .top-nav .title .player-close {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.player-information .top-nav .title .title-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.player-information .top-nav .details {
+    display: flex;
+    margin-top: 2rem;
+
+}
+
+.player-information .top-nav .details .points-credits {
+    display: flex;
+    margin-left: 3em;
+    text-align: center;
+}
+
+.player-information .top-nav .details .points-credits span {
+    margin-right: 2rem;
+}
+
+.player-information .top-nav .details .points-credits span .title,
+.player-information .top-nav .details .points-credits .credits .title {
+    color: darkgray;
+}
+
+.player-information .top-nav .details .points-credits span .pts,
+.player-information .top-nav .details .points-credits .credits .pts {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.player-information .player-inner-details {
+    /* margin-top: 12rem; */
+    margin-top: 0rem;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgb(255, 165, 0, 0.2);
+}
+
+.player-information .player-inner-details div {
+    margin-top: 0.5rem;
+}
+
+.player-information .player-inner-details .player-name {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.player-information .player-inner-details .player-work {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.player-information .player-inner-details .player-work span {
+    font-weight: 600;
+    color: black;
+}
+
+.player-information .player-inner-details .destination {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.player-information .player-inner-details .destination span {
+    margin-right: 1rem;
+}
+
+.player-information .player-inner-details .plm {
+    color: blue;
+    display: flex;
+    align-items: center;
+}
+
+.player-information .player-inner-details .plm .dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: blue;
+    margin-right: 0.4rem;
+    margin-bottom: 0.5rem;
+    border-radius: 50%;
+}
+
+.player-information .tfs {
+    padding: 1rem;
+    box-shadow: 0 0 10px rgb(255, 165, 0, 0.2);
+}
+
+.player-information .tfs .tfs-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.player-information .tfs .tfs-title-value {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.player-information .tfs .tfs-title-value div .title {
+    color: grey;
+}
+
+.player-information .tfs .tfs-title-value div .value {
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.player-information .my-teams {
+    padding: 1rem;
+    box-shadow: 0 0 10px rgb(255, 165, 0, 0.2);
+}
+
+.player-information .tfs .tfs-title .player-information .my-teams .my-teams-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.player-information .my-teams .mt-title-value {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.player-information .my-teams .mt-title-value div .title {
+    color: grey;
+}
+
+.player-information .cts {
+    padding: 1rem;
+    box-shadow: 0 0 10px rgb(255, 165, 0, 0.2);
+}
+
+.player-information .tfs .tfs-title .player-information .my-teams .my-teams-title .player-information .cts .cts-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.player-information .cts .cts-title-value {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.player-information .cts .cts-title-value .toss {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 0.5rem;
+}
+
+.player-information .cts .cts-title-value .toss .opposite,
+.player-information .cts .cts-title-value .toss .toss-win {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.player-information .cts .cts-title-value .toss .opposite .team span {
+    font-weight: 700;
+    color: black;
+}
+
+.player-information .cts .cts-title-value .toss .opposite .date {
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.player-information .cts .cts-title-value .selected-points-credits {
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 0.5rem;
+}
+
+.player-information .cts .cts-title-value .selected-points-credits .value {
+    margin-bottom: 0.5rem;
+}
+
+.player-information .cts .cts-title-value .selected-points-credits,
+.player-information .cts .cts-title-value .bat-bowl-other {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.player-information .cts .cts-title-value .selected-points-credits .title,
+.player-information .cts .cts-title-value .bat-bowl-other .title {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.player-information .add-btn .add-team {
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 255, 0, 1);
+    color: white;
+    cursor: pointer;
+
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 90%;
+    width: 100%;
+    z-index: 1;
+    /* padding: 1rem; */
+}
+
+.bottom .left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bottom .left .lt {
+    display: flex;
+    background-color: rgba(25, 50, 75);
+    color: #FFF;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.bottom .left .preview {
+    padding-right: 2rem;
+    margin-right: 2rem;
+    border-right: 1px solid #FFF;
+    cursor: pointer;
+}
+
+
+.bottom .left .past-lineup a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.bottom .right .next {
+    background-color: lightgray;
+    color: #FFF;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+}
+
+.preview-team {
+    width: 100%;
+    height: 100%;
+    background-color: lightgreen;
+    z-index: 111;
+    display: none;
+}
+
+
+.preview-team .preview-nav {
+    background-color: rgb(50, 12, 100);
+    color: white;
+    padding: 1rem;
+}
+
+.preview-team .preview-nav .close-username {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.preview-team .preview-nav .close-username .preview-close {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.preview-team .preview-nav .close-username .username {
+    font-weight: 700;
+}
+
+.preview-team .preview-nav .players-selected-credits {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid grey;
+    padding-top: 0.5rem;
+}
+
+.preview-team .preview-nav .players-selected-credits .players .title,
+.preview-team .preview-nav .players-selected-credits .credits .title {
+    color: lightgray;
+}
+
+
+.preview-team .preview-nav .players-selected-credits .players .value {
+    color: lightgray;
+}
+
+
+.preview-team .preview-nav .players-selected-credits .players .value span,
+.preview-team .preview-nav .players-selected-credits .credits .value {
+    color: #FFF;
+    font-size: 1.2em;
+}
+
+.preview-team .preview-nav .players-selected-credits .selected .lt .team {
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    padding: 0.2rem;
+    margin-right: 0.3rem;
+    border-radius: 2px;
+    font-size: 1rem;
+}
+
+.preview-team .preview-nav .players-selected-credits .selected .rt,
+.preview-team .preview-nav .players-selected-credits .selected .lt {
+    font-size: 1.3rem;
+}
+
+.preview-team .preview-nav .players-selected-credits .selected .rt .team {
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    padding: 0.2rem;
+    margin-left: 0.3rem;
+    border-radius: 2px;
+    font-size: 1rem;
+}
+
+.preview-team .selected-player {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+
+.preview-team .selected-player .no-selected-player {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: 5px;
+    color: #FFF;
+}
+
+.preview-team .selected-player .no-selected-player .title {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.preview-team .selected-player .no-selected-player .starting-btn {
+    background-color: #FFF;
+    color: black;
+    padding: 0.5rem;
+    border-radius: 7px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.preview-team .your-team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.preview-team .your-team .wk,
+.preview-team .your-team .bat,
+.preview-team .your-team .ar,
+.preview-team .your-team .bowl {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.preview-team .your-team .wk-title,
+.preview-team .your-team .bat-title,
+.preview-team .your-team .ar-title,
+.preview-team .your-team .bowl-title {
+    color: grey;
+    margin-bottom: 0.7rem;
+    margin-top: 1rem;
+}
+
+.preview-team .your-team .wk .your-player .your-player-name,
+.preview-team .your-team .bat .your-player .your-player-name,
+.preview-team .your-team .ar .your-player .your-player-name,
+.preview-team .your-team .bowl .your-player .your-player-name {
+    background-color: #FFF;
+    padding: 0.3rem;
+    border-radius: 5px;
+    margin-top: -0.3rem;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.preview-team .your-team .wk .your-player .your-player-credit,
+.preview-team .your-team .bat .your-player .your-player-credit,
+.preview-team .your-team .ar .your-player .your-player-credit,
+.preview-team .your-team .bowl .your-player .your-player-credit {
+    color: #FFF;
+}
+
+.team-nav.active2,
+.wrapper.active2,
+.player-information.active2,
+.bottom.active2 {
+    display: block;
+}
+
+/* 
+.team-nav,
+.wrapper,
+.player-information,
+.bottom{
+    display: none;
+} */
+
+
+/* past lineup css */
+
+.past-lineup-nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* min-height: 50vh; */
+
+    width: 100%;
+    background-color: rgb(30, 20, 10);
+    color: #fff;
+    ;
+}
+
+.past-lineup-nav .back-title-hours {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.past-lineup-nav .back-title-hours .back-title {
+    display: flex;
+    align-items: center;
+}
+
+
+.past-lineup-nav .back-title-hours .back-title .pl-back {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+
+.past-lineup-nav .back-title-hours .back-title .pl-title {
+    font-size: 0.99rem;
+}
+
+.past-lineup-nav .back-title-hours .hours .left-hours {
+    font-size: 0.8em;
+}
+
+.past-lineup-nav .pl-select-indicator {
+    width: 100%;
+    height: 10%;
+    background-color: rgb(0, 0, 0, 0.9);
+    padding: 1rem;
+
+}
+
+.past-lineup-nav .pl-select-indicator .pl-select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.past-lineup-nav .pl-select-indicator .pl-select div {
+    width: 100%;
+    height: 0.3rem;
+    background-color: lightgray;
+    margin-left: 0.5rem;
+    border-radius: 3px;
+}
+
+.past-lineup-nav .points-sel-by-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FFF;
+    color: black;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+
+.past-lineup-nav .plm-pl {
+    text-align: center;
+    /* margin-top: 2rem; */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    /* border-top: 1px solid blue; */
+    background-color: white;
+}
+
+
+
+.past-lineup-nav .plm-pl .title-plm-pl {
+    background-color: rgba(0, 0, 255);
+    padding: 0rem 0.8rem;
+    color: #FFF;
+    border-radius: 0.3rem;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.note {
+    text-align: center;
+    background-color: lightblue;
+    padding: 0.4em;
+    color: blue;
+}
+
+.note .heading-note {
+    color: darkblue;
+    font-weight: 700;
+}
+
+@media screen and (max-width:500px) {
+    .note {
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .pl-player-container {
+        font-size: 0.50em;
+    }
+
+    .pl-player-container-wrapper .title .text {
+        font-size: 0.7em;
+    }
+
+    .pl-player-container .pl-player-name .name {
+        font-size: 1.3em;
+    }
+
+    
+   
+}
+
+
+.pl-player-container img {
+    width: 3.5em;
+}
+
+.pl-player-container {
+    /* margin-top: 1rem; */
+    /* padding: 0 0.2rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* height: 100vh; */
+    /* position: absolute; */
+    /* margin-top: 5rem; */
+    padding: 0 0.5em;
+    padding-bottom: 1.5rem;
+
+
+}
+.pl-player-container table tr td{
+    padding-top: 1.5em;
+}
+
+.pl-player-container .left-pl-player {
+    margin-right: 0.3rem;
+    /* background-color: rgb(0, 0, 0, 0.03); */
+    /* padding: 0.5em; */
+    width: 50%;
+
+}
+
+.pl-player-container table {
+    /* width: 100%; */
+}
+
+.pl-player-container .right-pl-player {
+    margin-left: 0.3rem;
+    width: 50%;
+    /* background-color: rgb(0, 0, 0, 0.07); */
+
+}
+
+.pl-player-container-wrapper .title {
+    /* width: 100%; */
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5em;
+}
+
+.pl-player-container-wrapper .title .text {
+    background-color: blue;
+    color: white;
+    padding: 0 0.5em;
+    font-weight: 700;
+
+
+}
+
+.pl-player-container .pl-player-name {
+    margin-bottom: 0.2em;
+    margin-left: 0.3em;
+}
+
+.pl-player-container .pl-player-name .name {
+    font-weight: 700;
+}
+
+.pl-player-container .pl-player-name .player-pos {
+    color: grey;
+}
+
+.pl-player-container .sel-pts {
+    color: grey;
+    margin-left: 0.3em;
+
+}
+
+.pl-player-container .sr {
+    color: grey;
+    font-style: italic;
+    font-size: 1.3em;
+    /* position: static; */
+}
+
+.pl-player-container .two-dgt-sr{
+    font-weight: 700;
+    color: grey;
+    font-style: italic;
+    font-size: 2em;
+}
+
+.pl-player-container .add-player {
+    font-weight: 800;
+    color: darkgreen;
+    font-size: 2em;
+    margin-left: 1em;
+}
+
+.pl-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 90%;
+    width: 100%;
+    z-index: 1;
+    padding: 1rem;
+}
+
+
+.pl-bottom .left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pl-bottom .left .lt {
+    display: flex;
+    background-color: rgba(25, 50, 75);
+    color: #FFF;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.pl-bottom .left .preview {
+    cursor: pointer;
+}
+
+
+.pl-bottom .right .next {
+    background-color: lightgray;
+    color: #FFF;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+}
+
+.pl-bottom .right a {
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width:400px) {
+    .team-nav .left .back a i {
+        font-size: 1em;
+    }
+
+    .team-nav .left .teams .team span {
+        font-size: 1em;
+    }
+
+    .team-nav .stats-info .condition .title {
+        font-size: 0.8em;
+    }
+
+    .team-nav .stats-info {
+        overflow-x: scroll;
+        scrollbar-width: none;
+    }
+
+    .team-nav .stats-info::-webkit-scrollbar {
+        display: none;
+    }
+
+}
+
+
+/* Caption & Vice Caption CSS */
+
+.cvc-nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* min-height: 50vh; */
+    /* padding: 1em; */
+    width: 100%;
+    background-color: rgb(30, 20, 10);
+    color: #fff;
+    ;
+    padding-bottom: 0.8em;
+}
+
+.cvc-nav .back-title-hours {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.cvc-nav .back-title-hours .back-title {
+    display: flex;
+    align-items: center
+}
+
+.cvc-nav .back-title-hours .back-title .left-hours-title .cvc-title {
+    font-weight: 800;
+}
+
+.cvc-nav .back-title-hours .back-title .left-hours-title .hours {
+    font-size: 0.856em;
+    color: lightsalmon;
+}
+
+.cvc-nav .back-title-hours .back-title .pl-back {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.cvc-nav .back-title-hours .pts-sys .title {
+    border: 2px solid #fff;
+    padding: 0.3em 0.5em;
+    border-radius: 1.5em;
+}
+
+.cvc-nav .back-title-hours .pts-sys a {
+    text-decoration: none;
+    color: white;
+}
+
+.cvc-nav .cvc-nav-title .cvc-nav-text {
+    text-align: center;
+    color: lightgray;
+}
+
+.cvc-nav .cvc-points-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1em 0.8em;
+    background-color: rgba(30, 10, 10, 0.479);
+    /* padding: 0.5em 1em; */
+}
+
+.cvc-nav .cvc-points-info .c-pts,
+.cvc-nav .cvc-points-info .vc-pts {
+    display: flex;
+    align-items: center;
+}
+
+.cvc-nav .cvc-points-info .c-pts .c-txt,
+.cvc-nav .cvc-points-info .vc-pts .vc-txt {
+    border: 1px solid grey;
+    padding: 0.3em;
+    margin-right: 0.5em;
+    border-radius: 1.5em;
+    font-size: 0.8em;
+
+}
+
+.cvc-nav .cvc-points-info .c,
+.cvc-nav .cvc-points-info .vc {
+    font-size: 0.9em;
+    margin-left: 0.5em;
+}
+
+.cvc-nav .cvc-points-info .c .chc-title,
+.cvc-nav .cvc-points-info .vc .chc-title {
+    color: lightgray;
+    margin-bottom: 0.1em;
+    font-size: 0.8em;
+}
+
+
+.cvc-nav .cvc-points-info .c .chc-pts,
+.cvc-nav .cvc-points-info .vc .chc-pts {
+    font-weight: 800;
+    font-size: 0.8em;
+}
+
+
+
+.box {
+    width: 20%;
+    height: 20vh;
+    border: 1px solid green;
+    display: flex;
+    align-items: flex-start;
+    align-content: space-between;
+    /* justify-content: space-around; */
+    flex-direction: column;
+
+}
+
+.cvc-player-container-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+
+@media screen and (max-width:950px) {
+    .cvc-player-container-wrapper {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+
+
+@media screen and (max-width:690px) {
+    .cvc-player-container-wrapper {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+
+.cvc-player-container {
+    width: 100%;
+    /* height: 20vh; */
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    /* padding: 0.5em; */
+}
+
+.cvc-player-container .right-choice-c-vc {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    gap: 0 1.5em;
+    margin-right: 1em;
+}
+
+
+.cvc-player-container .left-player-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+
+}
+
+.cvc-player-container .left-player-info .left-player-img-team-pos {
+    margin-right: 0.8em;
+}
+
+.cvc-player-container .left-player-info .left-player-img-team-pos .cvc-team-pos {
+    /* font-size: 0.8em; */
+    display: flex;
+}
+
+.cvc-player-container .left-player-info .left-player-img-team-pos .cvc-team-pos .cvc-team {
+    background-color: rgba(0, 0, 0, 0.09);
+    color: black;
+}
+
+
+.cvc-player-container .left-player-info .left-player-img-team-pos .cvc-team-pos .cvc-pos {
+    background-color: lightgoldenrodyellow;
+    color: black;
+    margin-left: 0.1em;
+}
+
+.cvc-player-container .left-player-info .left-player-img-team-pos .cvc-info {
+    font-size: 1.2em;
+}
+
+.cvc-player-container .left-player-info .left-player-name-pts .left-player-name {
+    /* font-size: 0.8em; */
+    font-weight: 800;
+    color: black;
+}
+
+.cvc-player-container .right-choice-c-vc .right-cap .chc-c,
+.cvc-player-container .right-choice-c-vc .right-vcap .chc-vc {
+    text-align: center;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.08);
+    border-radius: 50%;
+    padding: 0.7em 0.5em;
+    margin-bottom: 0.5em;
+    border: 1px solid rgb(0, 0, 0, 0.08);
+    font-size: 0.8em;
+}

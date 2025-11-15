@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.wrapper{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0px 10px rgba(255, 165, 0, 0.2);
+    margin: 0 20px;
+    padding: 20px;
+    margin-top: 6rem;
+}
+.wrapper .Total-balance{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+}
+.wrapper .add-amount .input-add{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.wrapper .add-amount .input-add  input{
+    width: 100%;
+    padding: 10px;
+    border: none ;
+    outline: none;
+    font-size: 1rem;
+}
+
+.wrapper .add-amount .input-add  input:focus{
+    border: 2px solid rgb(255,165,0, 0.3);
+}
+
+.wrapper .payment-mode{
+    width: 100%;
+    height: 20%;
+    box-shadow: 0 0px 10px rgb(255, 165, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.wrapper .payment-mode .preferred-mode .GPay-mode{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.wrapper .payment-mode .preferred-mode .GPay-mode .mode-name label{
+    color: rgba(0, 0, 0, 0.7);
+
+}
+
+.wrapper .payment-mode .preferred-mode .option{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.wrapper .payment-mode .preferred-mode .upi-id input{
+    width: 100%;
+    padding: 8px;
+    font-size: 0.9rem;
+    border: 1px solid rgb(255, 165, 0, 0.2);
+    outline: none;
+    margin-bottom: 10px;
+
+}
+
+.wrapper .payment-mode .preferred-mode .pay-btn input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    outline: none;
+    color:rgba(0, 0, 0, 0.3);
+    font-size: 1.001rem;
+    margin-bottom: 5px;
+}
+
+.wrapper .payment-mode .preferred-mode .pay-btn input:hover{
+    background-color: rgb(255, 165, 0, 0.8);
+    color: white;
+}
+::selection{
+background: #fa4299;
+color: #fff;
+}
+.wrapper2{
+overflow: hidden;
+max-width: 390px;
+background: #fff;
+padding:  30px;
+border-radius: 5px;
+box-shadow: 0 0px 10px rgba(255, 165, 0, 0.2);
+}
+.wrapper2 .title-text{
+display: flex;
+width: 200%;
+}
+.wrapper2 .title{
+width: 50%;
+font-size: 35px;
+font-weight: 600;
+text-align: center;
+transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+   
+.wrapper .form-container{
+width: 100%;
+overflow: hidden;
+}
+.form-container .form-inner{
+display: flex;
+width: 200%;
+}
+.form-container .form-inner form{
+width: 50%;
+transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.form-inner form .field{
+height: 50px;
+width: 100%;
+margin-top: 20px;
+}
+.form-inner form .field input{
+height: 100%;
+width: 100%;
+outline: none;
+padding-left: 15px;
+border-radius: 5px;
+border: 1px solid lightgrey;
+border-bottom-width: 2px;
+font-size: 17px;
+transition: all 0.3s ease;
+}
+.form-inner form .field input:focus{
+border-color: rgb(255, 165, 0, 0.8);
+/* box-shadow: inset 0 0 3px #fb6aae; */
+}
+.form-inner form .field input::placeholder{
+color: #999;
+transition: all 0.3s ease;
+}
+form .field input:focus::placeholder{
+color: #b3b3b3;
+}
+.form-inner form .pass-link{
+margin-top: 5px;
+}  
+form .btn{
+height: 50px;
+width: 100%;
+border-radius: 5px;
+position: relative;
+overflow: hidden;
+}
+form .btn .btn-layer{
+height: 100%;
+width: 300%;
+position: absolute;
+left: -100%;
+/* background: -webkit-linear-gradient(right, #a445b2, #fa4299, #a445b2, #fa4299); */
+background-color: rgb(255, 165, 0);
+border-radius: 5px;
+transition: all 0.4s ease;;
+}
+form .btn input:hover {
+/* left: 0; */
+background-color: rgb(255, 165, 0.5);
+}
+form .btn input[type="submit"]{
+height: 100%;
+width: 100%;
+z-index: 1;
+position: relative;
+background: none;
+border: none;
+color: #fff;
+padding-left: 0;
+border-radius: 5px;
+font-size: 20px;
+font-weight: 500;
+cursor: pointer;
+}
+
+/* @media screen and (max-width:750px) {
+    .wrapper{
+        margin-top: 15%;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .wrapper{
+        margin-top: 15%;
+    }
+}
+
+
+@media screen and (max-width:950px) {
+    .wrapper{
+        margin-top: 15%;
+    }
+}  */
