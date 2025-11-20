@@ -24,7 +24,7 @@ README.md
 1. Clone the repository
 git clone https://github.com/TineshChasiya/Fantasy-website.git
 2. Open the project folder
-cd fantasy-cricket
+cd fantasy-cricket\n
 Run the first folder /home-page/index.html here is the starting point 
 3. Run using Live server/Localhost
 # Author
